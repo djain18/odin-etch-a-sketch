@@ -8,37 +8,10 @@ for (let i = 1; i <= 256; i++) {
   div.addEventListener("mouseover", function () {
     if (randomHoverColor > 5) {
       div.style.backgroundColor = "#3A0519";
-      let opacity = 1;
-      const fade = setInterval(() => {
-        opacity -= 0.1;
-        if (opacity <= 0) {
-          opacity = 0;
-          clearInterval(fade);
-        }
-        div.style.opacity = opacity;
-      }, 100);
     } else if (randomHoverColor < 5) {
       div.style.backgroundColor = "#A53860";
-      let opacity = 1;
-      const fade = setInterval(() => {
-        opacity -= 0.1;
-        if (opacity <= 0) {
-          opacity = 0;
-          clearInterval(fade);
-        }
-        div.style.opacity = opacity;
-      }, 100);
     } else if (randomHoverColor == 5) {
       div.style.backgroundColor = "#670D2F";
-      let opacity = 1;
-      const fade = setInterval(() => {
-        opacity -= 0.1;
-        if (opacity <= 0) {
-          opacity = 0;
-          clearInterval(fade);
-        }
-        div.style.opacity = opacity;
-      }, 100);
     }
   });
   divContainer.append(div);
@@ -64,37 +37,10 @@ btn.addEventListener("click", function () {
     div1.addEventListener("mouseover", function () {
       if (randomHoverColor > 5) {
         div1.style.backgroundColor = "#3A0519";
-        let opacity = 1;
-        const fade = setInterval(() => {
-          opacity -= 0.1;
-          if (opacity <= 0) {
-            opacity = 0;
-            clearInterval(fade);
-          }
-          div1.style.opacity = opacity;
-        }, 100);
       } else if (randomHoverColor < 5) {
         div1.style.backgroundColor = "#A53860";
-        let opacity = 1;
-        const fade = setInterval(() => {
-          opacity -= 0.1;
-          if (opacity <= 0) {
-            opacity = 0;
-            clearInterval(fade);
-          }
-          div1.style.opacity = opacity;
-        }, 100);
       } else if (randomHoverColor == 5) {
         div1.style.backgroundColor = "#670D2F";
-        let opacity = 1;
-        const fade = setInterval(() => {
-          opacity -= 0.1;
-          if (opacity <= 0) {
-            opacity = 0;
-            clearInterval(fade);
-          }
-          div1.style.opacity = opacity;
-        }, 100);
       }
     });
     divContainer.append(div1);
